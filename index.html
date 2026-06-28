@@ -206,6 +206,9 @@ footer span{color:var(--c)}
 .fi{opacity:0;transform:translateY(18px);transition:opacity 0.58s ease,transform 0.58s ease}
 .fi.v{opacity:1;transform:translateY(0)}
 
+@media(max-width:1024px){
+  .sk-card{flex:0 0 360px}
+}
 @media(max-width:860px){
   .hero-row{flex-direction:column-reverse;gap:40px;text-align:center}
   .hero-text{max-width:100%}
@@ -218,6 +221,98 @@ footer span{color:var(--c)}
   .nav-links{gap:1rem}
   .sk-card{flex:0 0 300px}
   .sk-img-wrap{height:180px}
+}
+@media(max-width:600px){
+  .wrap{padding:0 5%}
+  nav{padding:0 5%;height:52px}
+  .nav-logo{font-size:0.92rem}
+  .nav-links{gap:0.65rem}
+  .nav-links a{font-size:0.65rem;letter-spacing:0.08em}
+  .sp{padding-top:56px;padding-bottom:56px}
+  .sp-sm{padding-top:40px;padding-bottom:44px}
+  .sec-title{font-size:clamp(1.3rem,5vw,1.55rem);margin-bottom:30px}
+ #intro{padding:70px 5% 40px;min-height:auto}
+  .hero-name{font-size:clamp(1.7rem,8vw,2.6rem);line-height:1.0}
+  .hero-name-en{font-size:clamp(0.82rem,3.2vw,1rem);margin-bottom:20px}
+  .hero-info-row{grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:20px}
+  .hero-info-card{padding:12px 10px;border-radius:10px}
+  .hero-info-label{font-size:0.62rem}
+  .hero-info-val{font-size:0.85rem}
+  .hero-role{font-size:0.72rem;margin-bottom:16px}
+  .hero-chips{gap:6px}
+  .chip{font-size:0.7rem;padding:4px 9px}
+  .av-wrap{width:160px;height:160px}
+  .hero-row{gap:28px}
+  .edu-timeline{padding-left:26px}
+  .edu-item{margin-bottom:24px}
+  .edu-dot{left:-26px;width:12px;height:12px}
+  .edu-dot::after{width:5px;height:5px}
+  .edu-card{padding:18px 18px;border-radius:12px}
+  .edu-school{font-size:0.92rem}
+  .edu-faculty{font-size:0.78rem}
+  .edu-desc{font-size:0.78rem}
+  .pub-item{padding:12px 14px;grid-template-columns:28px 1fr;gap:10px;border-radius:9px}
+  .pub-num{font-size:0.95rem}
+  .pub-text{font-size:0.8rem}
+  .pub-foot{gap:5px}
+  .badge{font-size:0.6rem;padding:1px 6px}
+  .int-card{padding:18px 18px;border-radius:12px}
+  .int-head{gap:10px;margin-bottom:8px}
+  .int-icon{width:28px;height:28px;border-radius:6px}
+  .int-org{font-size:0.84rem}
+  .int-dept{font-size:0.72rem}
+  .int-desc{font-size:0.76rem;padding-left:38px;line-height:1.7}
+  .comp-layout{gap:20px}
+  .comp-row{padding:10px 12px;border-radius:9px;grid-template-columns:28px 1fr;gap:8px}
+  .comp-num{font-size:0.72rem}
+  .comp-name{font-size:0.8rem}
+  .comp-lv{font-size:0.6rem;padding:1px 6px}
+  .stat-card{padding:16px 18px}
+  .stat-n{font-size:1.5rem}
+  .stat-l{font-size:0.7rem}
+  .proj-empty{padding:48px 24px;border-radius:12px}
+  .sk-track{padding:4px 5% 16px;gap:14px}
+  .sk-card{flex:0 0 280px;border-radius:16px}
+  .sk-img-wrap{height:160px}
+  .sk-body{padding:20px 18px}
+  .sk-name{font-size:0.92rem}
+  .sk-desc{font-size:0.76rem}
+  #contact{padding:70px 5% 56px}
+  .contact-title{font-size:clamp(1.3rem,5.5vw,1.7rem)}
+  .contact-school{font-size:0.82rem;margin-bottom:18px}
+  .contact-sub{font-size:0.82rem;margin-bottom:24px}
+  .contact-info{gap:8px}
+  .ci-card{padding:10px 14px}
+  .ci-val{font-size:0.78rem}
+  .contact-links{gap:8px;margin-bottom:24px}
+  .clink{padding:11px 18px;font-size:0.78rem}
+  .qr-frame img{width:120px;height:120px}
+  footer{padding:14px 5%}
+  footer p{font-size:0.65rem}
+}
+@media(max-width:400px){
+  .wrap{padding:0 4%}
+  nav{padding:0 4%;height:48px}
+  .nav-logo{font-size:0.82rem}
+  .nav-links{gap:0.45rem}
+  .nav-links a{font-size:0.6rem;letter-spacing:0.06em}
+  #intro{padding:60px 4% 30px}
+  .hero-name{font-size:clamp(1.7rem,7vw,2.2rem)}
+  .hero-name-en{font-size:clamp(0.8rem,3vw,0.95rem);margin-bottom:16px}
+  .hero-info-row{grid-template-columns:1fr 1fr;gap:8px}
+  .hero-info-card{padding:10px 8px}
+  .hero-info-val{font-size:0.78rem}
+  .av-wrap{width:130px;height:130px}
+  .sk-card{flex:0 0 240px;border-radius:14px}
+  .sk-img-wrap{height:130px}
+  .sk-body{padding:16px 14px}
+  .sec-title{font-size:clamp(1.1rem,4.5vw,1.3rem);margin-bottom:22px}
+  .sp{padding-top:40px;padding-bottom:40px}
+  .contact-title{font-size:clamp(1.1rem,5vw,1.3rem)}
+  .edu-card{padding:14px 14px;border-radius:10px}
+  .pub-item{padding:10px 12px}
+  .int-card{padding:14px 14px}
+  .stat-n{font-size:1.25rem}
 }
 </style>
 </head>
@@ -303,36 +398,86 @@ footer span{color:var(--c)}
 <div class="rule"></div>
 <section id="publications">
   <div class="wrap sp">
-    <h2 class="sec-title fi" style="transition-delay:.06s">论文与专利</h2>
+    <h2 class="sec-title fi" style="transition-delay:.06s">现有成果</h2>
 
+    <!-- 一、论文 -->
     <div class="pub-block fi">
-      <div class="pub-dir-head">传统村落方向</div>
+      <div class="pub-dir-head">论文</div>
       <div class="pub-list">
         <div class="pub-item fi">
           <div class="pub-num">01</div>
           <div>
-            <div class="pub-text">Wei, C., <b class="author-deng">Deng, F.</b>, Xie, Y., Liu, F., Tan, J., Liao, H. &amp; Lei, Y. The process and driving mechanism of landscape fragmentation in traditional settlements in rapidly urbanizing areas ——Take Changjiao Village in Foshan, China as an example. <em>Heritage science</em>.</div>
-            <div class="pub-foot"><span class="badge b-wip">初审中</span><span class="badge b-green-q1">JCR Q1</span></div>
+            <div class="pub-text">Wei, C., <b class="author-deng">Deng, F.</b>, Xie, Y., et al. The process and driving mechanism of landscape fragmentation in traditional settlements in rapidly urbanizing areas ——Take Changjiao Village in Foshan, China as an example[J]. <em>Frontiers of Architectural Research</em>.（外审中）</div>
+            <div class="pub-foot"><span class="badge b-wip">外审中</span><span class="badge b-green-q1">SCIE · JCR Q1</span><span class="badge b-green-cssci">IF=3.6</span></div>
           </div>
         </div>
-        <div class="pub-item fi" style="transition-delay:.07s">
+        <div class="pub-item fi" style="transition-delay:.06s">
           <div class="pub-num">02</div>
           <div>
-            <div class="pub-text">刘付强, 魏成, <b class="author-deng">邓非凡</b>, 谭景柏 &amp; 马瑞婕. (2026). 快速城镇化驱动下传统村落类型分化研究与更新活化策略——以珠江三角洲为例. <em>自然资源学报</em>, 41(04), 1212–1236.</div>
-            <div class="pub-foot"><span class="badge b-acc">已见刊</span><span class="badge b-green-cssci">CSSCI</span></div>
+            <div class="pub-text">刘付强, 魏成, <b class="author-deng">邓非凡</b>, 等. 快速城镇化驱动下传统村落类型分化研究与更新活化策略——以珠江三角洲为例[J]. <em>自然资源学报</em>, 2026, 41(04): 1212–1236.（已发表）</div>
+            <div class="pub-foot"><span class="badge b-acc">已发表</span><span class="badge b-green-cssci">CSSCI</span><span class="badge b-green-cscd">CSCD</span><span class="badge b-green-q1">IF=11.873</span></div>
           </div>
         </div>
-        <div class="pub-item fi" style="transition-delay:.14s">
+        <div class="pub-item fi" style="transition-delay:.12s">
           <div class="pub-num">03</div>
           <div>
-            <div class="pub-text">刘付强, 魏成, 谭景柏 &amp; <b class="author-deng">邓非凡</b>. (2026). 高度城镇化地区传统村落文旅发展模式比较研究——以珠三角三个典型村落为例. <em>南方建筑</em>, 1–13.</div>
-            <div class="pub-foot"><span class="badge b-acc">已见刊</span><span class="badge b-green-cscd">CSCD 扩展</span></div>
+            <div class="pub-text"><b class="author-deng">Deng, F.</b>, Fan, J., Tan, J., et al. Landscape transformation in communities surrounding protected areas: characteristic, mechanisms, and pathways in China Giant Panda National Park[J]. <em>Habitat International</em>.（投稿中）</div>
+            <div class="pub-foot"><span class="badge b-wip">投稿中</span><span class="badge b-green-q1">SSCI · JCR Q1</span><span class="badge b-green-cssci">IF=8.5</span></div>
           </div>
         </div>
-        <div class="pub-item fi" style="transition-delay:.21s">
+        <div class="pub-item fi" style="transition-delay:.18s">
           <div class="pub-num">04</div>
           <div>
-            <div class="pub-text">华南理工大学. 一种传统聚落三维景观破碎度的测度方法：202510640933.5 [P]. 2025-09-02.</div>
+            <div class="pub-text"><b class="author-deng">邓非凡</b>, 范建红, 孙杨炀, 等. 国家公园社区参与的国外研究进展[J]. <em>世界地理研究</em>, 2025, 34(05): 49–64.（已发表）</div>
+            <div class="pub-foot"><span class="badge b-acc">已发表</span><span class="badge b-green-cssci">CSSCI 扩展</span><span class="badge b-green-q1">IF=3.755</span></div>
+          </div>
+        </div>
+        <div class="pub-item fi" style="transition-delay:.24s">
+          <div class="pub-num">05</div>
+          <div>
+            <div class="pub-text">谭景柏, 魏成, <b class="author-deng">邓非凡</b>, 等. 重点生态功能区城乡共同富裕模式及其内生动力提升——以广东省环万绿湖绿色发展区为例[J]. <em>自然资源学报</em>, 2026, 41(8): 2380–2400.（已发表）</div>
+            <div class="pub-foot"><span class="badge b-acc">已发表</span><span class="badge b-green-cssci">CSSCI</span><span class="badge b-green-cscd">CSCD</span><span class="badge b-green-q1">IF=11.873</span></div>
+          </div>
+        </div>
+        <div class="pub-item fi" style="transition-delay:.30s">
+          <div class="pub-num">06</div>
+          <div>
+            <div class="pub-text">范建红, 张朝君, <b class="author-deng">邓非凡</b>. 国土空间规划背景下城乡规划学发展动态与体系架构[J]. <em>规划师</em>, 2024, 40(12): 7–15.（已发表）</div>
+            <div class="pub-foot"><span class="badge b-acc">已发表</span><span class="badge b-green-cssci">CSSCI 扩展</span><span class="badge b-green-cscd">CSCD 扩展</span><span class="badge b-green-q1">IF=4.455</span></div>
+          </div>
+        </div>
+        <div class="pub-item fi" style="transition-delay:.34s">
+          <div class="pub-num">07</div>
+          <div>
+            <div class="pub-text">刘付强, 魏成, 谭景柏, <b class="author-deng">邓非凡</b>. 高度城镇化地区传统村落文旅发展模式比较研究——以珠三角三个典型村落为例[J]. <em>南方建筑</em>, 2026, 1–13.（已发表）</div>
+            <div class="pub-foot"><span class="badge b-acc">已发表</span><span class="badge b-green-cscd">CSCD 扩展</span><span class="badge b-green-q1">IF=2.685</span></div>
+          </div>
+        </div>
+        <div class="pub-item fi" style="transition-delay:.38s">
+          <div class="pub-num">08</div>
+          <div>
+            <div class="pub-text">范建红, <b class="author-deng">邓非凡</b>, 丁焕峰. 线上线下融合，数字聚力赋能——荔湾老城区文化空间活力提升的思考[J]. <em>广州市决策咨询研究基地专报件</em>.（投稿中）</div>
+            <div class="pub-foot"><span class="badge b-wip">投稿中</span><span class="badge b-green-internal">政府内参</span></div>
+          </div>
+        </div>
+        <div class="pub-item fi" style="transition-delay:.42s">
+          <div class="pub-num">09</div>
+          <div>
+            <div class="pub-text">Huang, Y., Zhang, Y., <b class="author-deng">Deng, F.</b>, et al. Impacts of built-environment on carbon dioxide emissions from traffic: A systematic literature review[J]. <em>International Journal of Environmental Research and Public Health</em>, 2022, 19(24): 16898.（已发表）</div>
+            <div class="pub-foot"><span class="badge b-acc">已发表</span><span class="badge b-green-esci">ESCI</span><span class="badge b-green-q1">IF=3.4</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 二、专利 -->
+    <div class="pub-block fi">
+      <div class="pub-dir-head">专利</div>
+      <div class="pub-list">
+        <div class="pub-item fi">
+          <div class="pub-num">01</div>
+          <div>
+            <div class="pub-text">华南理工大学. 一种传统聚落三维景观破碎度的测度方法：202510640933.5[P]. 2025-09-02.</div>
             <div class="pub-inv">发明人：魏成，<b class="author-deng">邓非凡</b>，谭景柏，刘付强，廖辉辉，范建红</div>
             <div class="pub-foot"><span class="badge b-acc">已公示</span><span class="badge b-green-patent">发明专利</span></div>
           </div>
@@ -340,55 +485,15 @@ footer span{color:var(--c)}
       </div>
     </div>
 
+    <!-- 三、国际会议 -->
     <div class="pub-block fi">
-      <div class="pub-dir-head">国家公园方向</div>
+      <div class="pub-dir-head">国际会议</div>
       <div class="pub-list">
         <div class="pub-item fi">
           <div class="pub-num">01</div>
           <div>
-            <div class="pub-text"><b class="author-deng">邓非凡</b>, 范建红, 孙杨炀 &amp; 张晓禄. (2025). 国家公园社区参与的国外研究进展. <em>世界地理研究</em>, 34(05), 49–64.</div>
-            <div class="pub-foot"><span class="badge b-acc">已见刊</span><span class="badge b-green-cssci">CSSCI</span></div>
-          </div>
-        </div>
-        <div class="pub-item fi" style="transition-delay:.1s">
-          <div class="pub-num">02</div>
-          <div>
-            <div class="pub-text"><b class="author-deng">邓非凡</b>, 范建红, 魏成 &amp; 龙永嵩. 国家公园周边社区景观演变的特征及其驱动机制——以大熊猫国家公园成都片区为例.</div>
-            <div class="pub-foot"><span class="badge b-wip">在研中</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="pub-block fi">
-      <div class="pub-dir-head">其他方向</div>
-      <div class="pub-list">
-        <div class="pub-item fi">
-          <div class="pub-num">01</div>
-          <div>
-            <div class="pub-text">谭景柏, 魏成, <b class="author-deng">邓非凡</b>, 周锐波, 沈静 &amp; 雷宇宏. 重点生态功能区城乡共同富裕模式及其内生动力提升——以广东省环万绿湖绿色发展区为例. <em>自然资源学报</em>.</div>
-            <div class="pub-foot"><span class="badge b-acc">已录用</span><span class="badge b-green-cssci">CSSCI</span></div>
-          </div>
-        </div>
-        <div class="pub-item fi" style="transition-delay:.07s">
-          <div class="pub-num">02</div>
-          <div>
-            <div class="pub-text">范建红, 张朝君, <b class="author-deng">邓非凡</b> &amp; 蔡云楠. (2024). 国土空间规划背景下城乡规划学发展动态与体系架构. <em>规划师</em>, 40(12), 7–15.</div>
-            <div class="pub-foot"><span class="badge b-acc">已见刊</span><span class="badge b-green-cssci">CSSCI</span></div>
-          </div>
-        </div>
-        <div class="pub-item fi" style="transition-delay:.14s">
-          <div class="pub-num">03</div>
-          <div>
-            <div class="pub-text">范建红, <b class="author-deng">邓非凡</b>, 丁焕峰. 线上线下融合，数字聚力赋能——荔湾老城区文化空间活力提升的思考. <em>广州市决策咨询研究基地专报件</em>.</div>
-            <div class="pub-foot"><span class="badge b-wip">投稿中</span><span class="badge b-green-internal">政府内参</span></div>
-          </div>
-        </div>
-        <div class="pub-item fi" style="transition-delay:.21s">
-          <div class="pub-num">04</div>
-          <div>
-            <div class="pub-text">Huang, Y., Zhang, Y., <b class="author-deng">Deng, F.</b>, Zhao, D., &amp; Wu, R. (2022). Impacts of built-environment on carbon dioxide emissions from traffic: A systematic literature review. <em>International Journal of Environmental Research and Public Health</em>, 19(24), 16898.</div>
-            <div class="pub-foot"><span class="badge b-acc">已见刊</span><span class="badge b-green-esci">ESCI</span></div>
+            <div class="pub-text">Sun, Y., <b class="author-deng">Deng, F.</b>, Wang, Y., et al. How Students Read Rain Gardens: Age-Specific Perceptions and Design Implications of Campus Rainwater Landscapes[C]. <em>IFLA 2026 World Congress</em>, Hong Kong, China.（Poster presentation）</div>
+            <div class="pub-foot"><span class="badge b-green-q1">国际顶级会议</span></div>
           </div>
         </div>
       </div>
@@ -456,7 +561,98 @@ footer span{color:var(--c)}
 <div class="rule"></div>
 <section id="projects" class="band-alt">
   <div class="wrap sp">
-    <h2 class="sec-title fi" style="transition-delay:.06s">项目展示</h2>
+    <h2 class="sec-title fi" style="transition-delay:.06s">科研项目参与</h2>
+  </div>
+
+  <!-- 科研项目横向滑动 -->
+  <div style="overflow:hidden;position:relative;z-index:1">
+    <div class="sk-outer fi" style="transition-delay:.1s">
+      <div class="sk-track" id="researchTrack">
+        <!-- 项目 1 -->
+        <div class="sk-card">
+          <div class="sk-img-wrap">
+            <svg width="100%" height="100%" viewBox="0 0 480 280" preserveAspectRatio="xMidYMid slice" style="background:#0e1628">
+              <rect width="480" height="280" fill="#0e1628"/>
+              <line x1="140" y1="90" x2="340" y2="90" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <line x1="140" y1="140" x2="340" y2="140" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <line x1="140" y1="190" x2="340" y2="190" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <circle cx="240" cy="140" r="40" fill="none" stroke="rgba(0,245,255,0.15)" stroke-width="1.5"/>
+              <text x="240" y="145" text-anchor="middle" fill="rgba(0,245,255,0.25)" font-family="Syne,sans-serif" font-size="11" font-weight="700">项目 1</text>
+              <text x="240" y="260" text-anchor="middle" fill="rgba(107,123,154,0.4)" font-family="Noto Sans SC,sans-serif" font-size="9">图片占位</text>
+            </svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-num">01</div>
+            <div class="sk-name">国家社科后期基金项目</div>
+            <div class="sk-desc" style="margin-bottom:8px">《快速城镇化驱动下珠三角传统村落类型分化与保护利用研究》</div>
+            <div class="sk-desc" style="color:var(--m2);font-size:0.78rem;line-height:1.7">深度参与基金申报、专利研发和书稿撰写，主要负责破碎化传统村落的类型识别与保护利用研究</div>
+          </div>
+        </div>
+
+        <!-- 项目 2 -->
+        <div class="sk-card">
+          <div class="sk-img-wrap">
+            <svg width="100%" height="100%" viewBox="0 0 480 280" preserveAspectRatio="xMidYMid slice" style="background:#0e1628">
+              <rect width="480" height="280" fill="#0e1628"/>
+              <line x1="140" y1="90" x2="340" y2="90" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <line x1="140" y1="140" x2="340" y2="140" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <line x1="140" y1="190" x2="340" y2="190" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <circle cx="240" cy="140" r="40" fill="none" stroke="rgba(0,245,255,0.15)" stroke-width="1.5"/>
+              <text x="240" y="145" text-anchor="middle" fill="rgba(0,245,255,0.25)" font-family="Syne,sans-serif" font-size="11" font-weight="700">项目 2</text>
+              <text x="240" y="260" text-anchor="middle" fill="rgba(107,123,154,0.4)" font-family="Noto Sans SC,sans-serif" font-size="9">图片占位</text>
+            </svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-num">02</div>
+            <div class="sk-name">华南理工大学出版社教材编写</div>
+            <div class="sk-desc" style="margin-bottom:8px">《面向中国式现代化的乡村规划》研究生教材</div>
+            <div class="sk-desc" style="color:var(--m2);font-size:0.78rem;line-height:1.7">负责教材第五章《乡村产业演变与发展规划》的撰写与修改</div>
+          </div>
+        </div>
+
+        <!-- 项目 3 -->
+        <div class="sk-card">
+          <div class="sk-img-wrap">
+            <svg width="100%" height="100%" viewBox="0 0 480 280" preserveAspectRatio="xMidYMid slice" style="background:#0e1628">
+              <rect width="480" height="280" fill="#0e1628"/>
+              <line x1="140" y1="90" x2="340" y2="90" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <line x1="140" y1="140" x2="340" y2="140" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <line x1="140" y1="190" x2="340" y2="190" stroke="rgba(0,245,255,0.12)" stroke-width="1"/>
+              <circle cx="240" cy="140" r="40" fill="none" stroke="rgba(0,245,255,0.15)" stroke-width="1.5"/>
+              <text x="240" y="145" text-anchor="middle" fill="rgba(0,245,255,0.25)" font-family="Syne,sans-serif" font-size="11" font-weight="700">项目 3</text>
+              <text x="240" y="260" text-anchor="middle" fill="rgba(107,123,154,0.4)" font-family="Noto Sans SC,sans-serif" font-size="9">图片占位</text>
+            </svg>
+          </div>
+          <div class="sk-body">
+            <div class="sk-num">03</div>
+            <div class="sk-name">广州市哲学社会科学规划课题</div>
+            <div class="sk-desc" style="margin-bottom:8px">《广州加快打造人工智能与机器人产业高地研究》</div>
+            <div class="sk-desc" style="color:var(--m2);font-size:0.78rem;line-height:1.7">负责研究报告第三章《广州市人工智能与机器人产业发展现状与优势》，对广州市致景科技企业开展专题案例研究，衍生"平台经济下纺织制造型企业的转型过程和驱动机理"研究，目前仍在研中</div>
+          </div>
+        </div>
+
+        <!-- 项目 4 -->
+       <div class="sk-card">
+         <div class="sk-img-wrap">
+<img src="科研项目4.png" alt="东莞市百千万工程课题" class="sk-img" loading="lazy">
+         </div>
+         <div class="sk-body">
+           <div class="sk-num">04</div>
+           <div class="sk-name">东莞市"百千万工程"课题</div>
+            <div class="sk-desc" style="margin-bottom:8px">《"百千万工程"建设背景下东莞市典型村发展模式与推进路径研究》</div>
+            <div class="sk-desc" style="color:var(--m2);font-size:0.78rem;line-height:1.7">前期参与东莞典型村的特征梳理和模式识别，后期负责实业发展、集股投资两种典型村发展路径的研究</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="sk-dots" id="researchDots"></div>
+    </div>
+  </div>
+
+  <!-- 横向项目参与 -->
+  <div class="wrap sp">
+    <h2 class="sec-title fi" style="transition-delay:.06s">横向项目参与</h2>
     <div class="proj-empty fi">
       <div class="proj-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(0,245,255,0.35)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg></div>
       <div class="proj-title">内容建设中</div>
@@ -577,6 +773,26 @@ document.querySelectorAll('.fi').forEach(function(el){obs.observe(el)});
 var track=document.getElementById('skTrack');
 var dotsWrap=document.getElementById('skDots');
 var CARD=380+20;
+var researchTrack=document.getElementById('researchTrack');
+var researchDots=document.getElementById('researchDots');
+var researchCard=380+20;
+researchTrack.querySelectorAll('.sk-card').forEach(function(_,i){
+  var dot=document.createElement('button');
+  dot.className='sk-dot'+(i===0?' active':'');
+  dot.addEventListener('click',function(){researchTrack.scrollTo({left:i*researchCard,behavior:'smooth'})});
+  researchDots.appendChild(dot);
+});
+var rDots=researchDots.querySelectorAll('.sk-dot');
+researchTrack.addEventListener('scroll',function(){
+  var idx=Math.round(researchTrack.scrollLeft/researchCard);
+  rDots.forEach(function(d,i){d.classList.toggle('active',i===idx)});
+});
+var rDown=false,rStartX=0,rScrollL=0;
+researchTrack.addEventListener('mousedown',function(e){rDown=true;researchTrack.classList.add('dragging');rStartX=e.pageX-researchTrack.offsetLeft;rScrollL=researchTrack.scrollLeft;});
+document.addEventListener('mouseup',function(){rDown=false;researchTrack.classList.remove('dragging');});
+researchTrack.addEventListener('mousemove',function(e){if(!rDown)return;e.preventDefault();var x=e.pageX-researchTrack.offsetLeft;researchTrack.scrollLeft=rScrollL-(x-rStartX);});
+
+
 track.querySelectorAll('.sk-card').forEach(function(_,i){
   var dot=document.createElement('button');
   dot.className='sk-dot'+(i===0?' active':'');
