@@ -164,7 +164,7 @@ html[lang="en"] #publications .pub-block:first-of-type .pub-item:nth-child(7){di
 .hp-track.dragging{cursor:grabbing;scroll-snap-type:none}
 .hp-card{flex:0 0 400px;scroll-snap-align:start;background:var(--card);border:1px solid var(--b);border-radius:16px;overflow:hidden;transition:border-color 0.28s,transform 0.28s,box-shadow 0.28s}
 .hp-card:hover{border-color:var(--b2);transform:translateY(-4px);box-shadow:0 14px 38px rgba(0,245,255,0.1)}
-.hp-images{display:flex;flex-direction:column;background:#fff}
+.hp-images{display:flex;flex-direction:column;background:var(--card)}
 .hp-images img{display:block;width:100%;height:auto}
 .hp-images img+img{border-top:2px solid var(--bg2)}
 .hp-body{padding:14px 16px 16px}
@@ -192,7 +192,7 @@ html[lang="en"] #projects .sk-name,html[lang="en"] #softwareProjectTrack .hp-nam
 .design-track.dragging{cursor:grabbing;scroll-snap-type:none}
 .design-card{flex:0 0 480px;scroll-snap-align:start;background:var(--card);border:1px solid var(--b);border-radius:16px;overflow:hidden;transition:border-color 0.28s,transform 0.28s,box-shadow 0.28s}
 .design-card:hover{border-color:var(--b2);transform:translateY(-4px);box-shadow:0 14px 38px rgba(0,245,255,0.1)}
-.design-media{aspect-ratio:1.415;background:#fff;overflow:hidden;border-bottom:1px solid var(--b)}
+.design-media{aspect-ratio:1.415;background:var(--card);overflow:hidden;border-bottom:1px solid var(--b)}
 .design-media img{width:100%;height:100%;display:block;object-fit:contain;transition:transform 0.4s ease}
 .design-card:hover .design-media img{transform:scale(1.025)}
 .design-body{padding:20px 22px 22px}
@@ -219,9 +219,9 @@ html[lang="en"] #projects .sk-name,html[lang="en"] #softwareProjectTrack .hp-nam
   display:flex;flex-direction:column;
 }
 .sk-card:hover{border-color:var(--b2);transform:translateY(-8px);box-shadow:0 16px 48px rgba(0,245,255,0.2)}
-.sk-img-wrap{width:100%;height:280px;overflow:hidden;flex-shrink:0}
+.sk-img-wrap{width:100%;height:280px;overflow:hidden;flex-shrink:0;background:var(--card)}
 .sk-img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s;display:block}
-.sk-img.contain{object-fit:contain;background:#fff;padding:8px}
+.sk-img.contain{object-fit:contain;background:var(--card);padding:8px}
 .sk-card:hover .sk-img{transform:scale(1.08)}
 .sk-card:hover .sk-img.contain{transform:none}
 .sk-body{padding:28px 26px 28px;flex:1}
@@ -1034,6 +1034,28 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&navToggle.g
 window.matchMedia('(max-width:1000px)').addEventListener('change',function(){setNavOpen(false)});
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('v')});},{threshold:0.07});
 document.querySelectorAll('.fi').forEach(function(el){obs.observe(el)});
+
+var mediaTracks=document.querySelectorAll('#researchTrack,#horizontalProjectTrack,#softwareProjectTrack,#designTrack,#skTrack');
+function loadNearbyImages(track){
+  var bounds=track.getBoundingClientRect();
+  var margin=track.clientWidth;
+  track.querySelectorAll('img[loading="lazy"]').forEach(function(img){
+    var card=img.closest('.sk-card,.hp-card,.design-card');
+    if(!card)return;
+    var rect=card.getBoundingClientRect();
+    if(rect.right>bounds.left-margin&&rect.left<bounds.right+margin)img.loading='eager';
+  });
+}
+var mediaObserver=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(!entry.isIntersecting)return;
+    var track=entry.target;
+    loadNearbyImages(track);
+    track.addEventListener('scroll',function(){loadNearbyImages(track)},{passive:true});
+    mediaObserver.unobserve(track);
+  });
+},{rootMargin:'600px 0px'});
+mediaTracks.forEach(function(track){mediaObserver.observe(track)});
 
 var softwareTrack=document.getElementById('softwareProjectTrack');
 var softwareDots=document.getElementById('softwareProjectDots');
